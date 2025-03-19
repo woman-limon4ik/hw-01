@@ -2,12 +2,10 @@ print('Hellow, world!')
 
 
 def fib(n):
-    if n == 1:
-        return 0
-    
-    if n == 2:
-        return 1
-    
-    return fib(n-1) + fib(n-2)
-
-print(fib(10))
+    lst = [0, 1]
+    print(1, 2, sep='\n')
+    for i in range(2, n):
+        fib_n = lst[i - 1] + lst[i - 2]
+        print(fib_n)
+        lst.append(fib_n)
+    return lst[-1]
